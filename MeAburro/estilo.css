@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contenedor{
+    padding: 60px;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #313131;
+}
+.titulo{
+    color: #FFD600;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+header {
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(to right, rgba(255, 214, 0, 0.5), rgba(252, 133, 59, 0.5)), url(mono.png); /* Agregar el gradiente delante de la imagen de fondo */
+    background-size: contain; /* Ajustar el tamaño de la imagen de fondo */
+    background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
+    background-position: center; /* Centrar la imagen de fondo */
+    position: relative;
+}
+p{
+    color: white;
+}
+
+
+ul, ol {
+    list-style: none;
+
+}
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+    padding: 30px 50px 0 0;
+    display: block;
+}
+.nav >li {
+    float: right;
+
+}
+.nav li a:hover {
+    background-color: #000;
+
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+}
+.nav li:hover> ul{
+    display: block;
+}
+.nav li ul li {
+    position: relative;
+}
+.nav li ul li ul{
+    right: -140px;
+    top: 0px;
+}
+header .textos_header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+}
+.textos_header h1{
+    font-size: 50px;
+    color: #fff;
+}
+.textos_header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedorsobre {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;}
+.imagenaboutus{
+    width: 48%;
+    float: left;
+}
+.conenedorsobre .contenido_textos{
+    
+    width: 48%;
+    margin-left: 40px;
+    float: right;
+}
+h3 {
+    color: white;
+}
+.contenido_textos h3{
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.contenido_textos h3 span{
+    background: black;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    padding: 2px;
+    margin-right: 5px;
+}
+.contenido_textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align:justify;
+}
+.portafolio{
+    background: #f2f2f2;
+}
+.galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen{
+    
+    width: 24%;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 0 6px 0 rgba(0, 0, 0, rgba(0, 0, 0, .5));
+}
+.imagen >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: #4d46;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.cards .card img{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    display: block;
+}
+.cards .card > .contenidcard{
+    text-align: center;
+    color: black;
+}
+.cards .card > .contenidcard p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+.about{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.servicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicioind{
+    width: 28%;
+    text-align: center;
+
+}
+.servicioind > img{
+    width: 90%;
+    
+} 
+.servicioind h3{
+   margin: 10px 0;
+    
+} 
+.servicioind p{
+     font-weight: 300;
+     text-align: justify;
+ } 
+ footer{
+    background: #000;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+ }
+ .contenedorfooter{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #fff;
+ }
+ .contentf{
+    text-align: center;
+    
+ }
+ .conntentf h4{
+    text-align: center;
+    color: #fff;
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+ }
+ .conntentf p{
+    text-align: center;
+    color: #fff;
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+ }
