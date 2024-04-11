@@ -8,3 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Instanciar un nuevo objeto QRCode con la URL y el contenedor
     new QRCode(qrCodeContainer, url);
 });
+function volverPaginaPrincipal() {
+    window.location.href = 'Hola.html';
+}
