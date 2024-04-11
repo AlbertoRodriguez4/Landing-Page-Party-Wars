@@ -33,7 +33,7 @@ function partyWars(event) {
     // Prevenir el comportamiento predeterminado del enlace
     event.preventDefault();
     
-    var contenedorSobre = document.querySelector('.contenedorsobre');
+    var contenedorSobre = document.querySelector('.introduccion');
     contenedorSobre.scrollIntoView(opcionesDesplazamiento);
 }
 function nuestraApp(event) {
