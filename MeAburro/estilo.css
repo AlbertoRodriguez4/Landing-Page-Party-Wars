@@ -3,15 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(11, 11, 11, 0.902),
+    rgb(0, 0, 0),
+    rgba(47, 47, 47, 0.9),
+    rgba(49, 49, 49, 0.9)
+  );
+}
 img {
   width: 100%;
   height: 100%;
 }
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(11, 11, 11, 0.902),
+    rgb(0, 0, 0),
+    rgba(47, 47, 47, 0.9),
+    rgba(49, 49, 49, 0.9)
+  );
 }
 .contenedor {
   display: flex;
+  text-align: center;
   flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
@@ -20,76 +37,104 @@ body {
   background-color: #313131;
 }
 .clientes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;   
-    height: auto;
-    background-image: linear-gradient(to bottom, rgba(11, 11, 11, 0.902), rgb(0, 0, 0), rgba(47, 47, 47, 0.9), rgba(49, 49, 49, 0.9));
-    padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(11, 11, 11, 0.902),
+    rgb(0, 0, 0),
+    rgba(47, 47, 47, 0.9),
+    rgba(49, 49, 49, 0.9)
+  );
+  padding: 50px 0;
 }
 
 .clientes .titulo {
-    text-align: center;
-    color: white;
-    font-size: 32px;
-    margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.titulo2 {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.contenedorrr {
+  text-align: center;
+  border-radius: 10px solid white;
+}
+.separator {
+  width: 100%;
+  height: 2px; /* Grosor del borde */
+  background-color: #fff; /* Color del borde */
+  margin: 20px 0; /* Espacio vertical entre secciones */
 }
 
 .clientes .contenido {
-    display: flex;
-    margin-top: 40px;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to bottom, rgba(11, 11, 11, 0.902), rgb(0, 0, 0), rgba(47, 47, 47, 0.9), rgba(49, 49, 49, 0.9));
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(11, 11, 11, 0.902),
+    rgb(0, 0, 0),
+    rgba(47, 47, 47, 0.9),
+    rgba(49, 49, 49, 0.9)
+  );
 }
 
 .clientes .descripcion,
 .clientes .beneficios,
 .clientes .testimonios {
-    flex: 1;
-    margin: 0 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .clientes .descripcion h3,
 .clientes .beneficios h3,
 .clientes .testimonios h3 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 15px;
-    
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .clientes .descripcion p,
 .clientes .beneficios ul {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.6;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .clientes .beneficios ul {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .clientes .testimonio {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .clientes .testimonio blockquote {
-    font-size: 18px;
-    color: #444;
-    margin-bottom: 10px;
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
 }
 
 .clientes .testimonio cite {
-    font-style: normal;
-    color: #888;
+  font-style: normal;
+  color: #888;
 }
 section {
   display: flex;
@@ -108,6 +153,108 @@ h5 {
   font-size: 40px;
   text-align: center;
 }
+
+p {
+  color: white;
+}
+#si {
+  color: #000;
+}
+/* Estilos para el menú principal */
+/* Estilos para el menú principal */
+/* Estilos para el menú principal */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0; /* Asegura que el menú esté siempre en la parte superior */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav li {
+  text-align: center; /* Alinea horizontalmente los enlaces en sus elementos li */
+  width: 100%; /* Ajusta el ancho de cada elemento del menú según tus necesidades */
+}
+
+.nav > li > a {
+  display: block;
+  padding: 15px 20px; /* Espaciado interno para los enlaces */
+  color: #fff;
+  text-decoration: none;
+  position: relative; /* Establece la posición relativa para el subrayado */
+}
+
+.nav > li > a::after {
+  content: ""; /* Crea el subrayado */
+  position: absolute;
+  left: 50%; /* Mueve el subrayado a la mitad del elemento a */
+  right: 50%; /* Establece el borde derecho del subrayado */
+  bottom: 0;
+  width: 0; /* Ancho inicial del subrayado */
+  height: 2px; /* Altura del subrayado */
+  background-image: linear-gradient(
+    to right,
+    #7cfff7,
+    #ff88e5
+  ); /* Color del subrayado */
+  transition: width 1s ease; /* Agrega una transición suave al ancho del subrayado */
+  transform: translateX(-50%); /* Centra el subrayado horizontalmente */
+}
+
+.nav > li:hover > a::after {
+  width: 50%; /* Ajusta el ancho del subrayado al hacer hover */
+}
+/* Estilos para el submenú */
+.nav ul {
+  display: none;
+  position: absolute;
+  top: 100%; /* Aparece debajo del elemento padre */
+  left: 0;
+  background-color: #333;
+  padding: 0;
+  transition: opacity 0.3s, visibility 0.3s; /* Agrega una transición suave a la visibilidad del submenú */
+  opacity: 0; /* Oculta el submenú inicialmente */
+  visibility: hidden; /* Oculta el submenú inicialmente */
+}
+
+.nav li:hover > ul {
+  opacity: 1; /* Hace que el submenú sea visible al hacer hover */
+  visibility: visible; /* Hace que el submenú sea visible al hacer hover */
+}
+
+.nav ul li {
+  width: 100%;
+}
+
+.nav ul li a {
+  display: block;
+  padding: 10px 20px; /* Espaciado interno para los enlaces del submenú */
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+}
+.nav li a {
+  display: block;
+  padding: 15px 20px; /* Espaciado interno para los enlaces */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px; /* Tamaño de fuente */
+  font-weight: bold; /* Peso de la fuente */
+  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.nav ul li:hover {
+  background-image: linear-gradient(
+    to right,
+    #7cfff7,
+    #ff88e5
+  ); /* Cambia el color de fondo al hacer hover */
+}
 header {
   width: 100%;
   height: 900px;
@@ -117,69 +264,39 @@ header {
       rgba(252, 133, 59, 0.5)
     ),
     url(mono.png); /* Agregar el gradiente delante de la imagen de fondo */
-  background-size: contain; /* Ajustar el tamaño de la imagen de fondo */
-  background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
+  background-size: cover; /* Ajustar el tamaño de la imagen de fondo para cubrir todo el encabezado */
   background-position: center; /* Centrar la imagen de fondo */
   position: relative;
 }
-p {
-  color: white;
-}
 
-ul,
-ol {
-  list-style: none;
-}
-.nav li a {
-  color: #fff;
-  text-decoration: none;
-  text-align: right;
-  padding: 30px 50px 0 0;
-  display: block;
-}
-.nav > li {
-  float: right;
-}
-.nav li a:hover {
-  background-color: #000;
-}
-.nav li ul {
-  display: none;
-  position: absolute;
-}
-.nav li:hover > ul {
-  display: block;
-}
-.nav li ul li {
-  position: relative;
-}
-.nav li ul li ul {
-  right: -140px;
-  top: 0px;
-}
-header .textos_header {
+.textos_header {
   display: flex;
-  height: 430px;
+  height: 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: right;
+  text-align: center; /* Alinea el texto al centro */
 }
+
 .textos_header h1 {
   font-size: 50px;
   color: #fff;
+  margin-bottom: 20px; /* Agregar espacio entre el título y el subtítulo */
 }
+
 .textos_header h2 {
   font-size: 30px;
   font-weight: 300;
   color: #fff;
 }
 h2 {
-  margin-top: 80px;
-  color: #ffd600;
-  font-size: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
 }
+
 .wave {
   position: absolute;
   bottom: 0;
@@ -283,14 +400,24 @@ h3 {
   padding-top: 5px;
 }
 .about {
-  background: #f2f2f2;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(11, 11, 11, 0.902),
+    rgb(0, 0, 0),
+    rgba(47, 47, 47, 0.9),
+    rgba(49, 49, 49, 0.9)
+  );
   padding-bottom: 30px;
+  border-radius: 10px solid white;
 }
 .servicio {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .servicioind {
   width: 28%;
@@ -441,4 +568,83 @@ input:nth-of-type(5) {
 }
 input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
+}
+section {
+  padding: 20px;
+}
+
+#contacto {
+  max-width: 90%; /* Para que ocupe casi toda la anchura */
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+#contacto p {
+  text-align: center; /* Centrar el texto */
+  font-size: 20px;
+}
+
+form {
+  background-color: #3f3f3f; /* Nuevo color de fondo para el formulario */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  border: 1px solid white;
+}
+input {
+  border: 10px solid white;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff; /* Nuevo color para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #666; /* Nuevo color para el borde */
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #444; /* Nuevo color de fondo para los campos de entrada */
+  color: #fff; /* Nuevo color de texto para los campos de entrada */
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.copyright {
+  text-align: center; /* Alinea el texto al centro */
+  margin-top: 20px; /* Espacio superior */
+  padding: 10px 0; /* Espacio interno */
+  background-color: #313131; /* Color de fondo */
+  color: #fff; /* Color del texto */
+}
+
+/* Opcional: estilos para el texto de copyright */
+.copyright p {
+  font-size: 14px; /* Tamaño de fuente */
 }

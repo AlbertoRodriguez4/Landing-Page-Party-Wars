@@ -1,21 +1,48 @@
-const carousel = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-let currentIndex = 0;
-
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    carousel.scroll({
-        left: slides[currentIndex].offsetLeft,
-        behavior: 'smooth'
+window.addEventListener('scroll', function() {
+    var navItems = document.querySelectorAll('.nav > li > a');
+    navItems.forEach(function(item) {
+      var bounding = item.getBoundingClientRect();
+      if (bounding.top < window.innerHeight / 2 && bounding.bottom > window.innerHeight / 2) {
+        item.style.opacity = 1; // Si el elemento está en la mitad de la ventana, establece opacidad a 1
+      } else {
+        item.style.opacity = 0.5; // Si el elemento no está en la mitad de la ventana, establece opacidad a 0.5
+      }
     });
-});
+  });
 
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    carousel.scroll({
-        left: slides[currentIndex].offsetLeft,
-        behavior: 'smooth'
-    });
-});
+function avisa() {
+    location.reload();
+}
+
+var opcionesDesplazamiento = {
+    behavior : 'smooth'
+}
+
+function partyWars(event) {
+    // Prevenir el comportamiento predeterminado del enlace
+    event.preventDefault();
+    
+    var contenedorSobre = document.querySelector('.contenedorsobre');
+    contenedorSobre.scrollIntoView(opcionesDesplazamiento);
+}
+function nuestraApp(event) {
+    // Prevenir el comportamiento predeterminado del enlace
+    event.preventDefault();
+    
+    var contenedorSobre = document.getElementById('desplegable');
+    contenedorSobre.scrollIntoView(opcionesDesplazamiento);
+}
+function contacto(event) {
+    // Prevenir el comportamiento predeterminado del enlace
+    event.preventDefault();
+    
+    var contenedorSobre = document.getElementById('contacto');
+    contenedorSobre.scrollIntoView(opcionesDesplazamiento);
+}
+function planBusiness(event) {
+    // Prevenir el comportamiento predeterminado del enlace
+    event.preventDefault();
+    
+    var contenedorSobre = document.querySelector('.contenido');
+    contenedorSobre.scrollIntoView(opcionesDesplazamiento);
+}

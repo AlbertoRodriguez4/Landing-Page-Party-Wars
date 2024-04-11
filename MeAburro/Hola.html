@@ -7,16 +7,17 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
-    <script src='main.js'></script>
+    <script src='script.js'></script>
 </head>
 
 <body>
     <header>
         <ul class = "nav">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Acerca de </a></li>
-            <li><a href="">Somos</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a onclick="avisa()" href="">Inicio</a></li>
+            <li><a onclick="partyWars(event)" href="#">¿Qué es Party Wars?</a></li>
+            <li><a onclick="nuestraApp(event)" href="#">Nuestra App</a></li>
+            <li><a onclick="planBusiness(event)" href="#">Plan Business</a></li>
+            <li><a onclick="contacto(event)" href="#">Contacto</a></li>
         </ul>
         <section class="textos_header">
             <h1>Party Wars</h1>
@@ -47,6 +48,7 @@
                 </div>
             </div>
         </section>
+        
         <section class="portafolio">
             <div class="conenedor">
                 <h2>Aplicacion</h2>
@@ -75,32 +77,32 @@
             <div class="contenido">
                 <div class="descripcion">
                     <h3>Impulsa el crecimiento de tu empresa con nuestra solución</h3>
-                    <p>Nuestra plataforma ofrece herramientas y servicios diseñados específicamente para satisfacer las necesidades únicas de las empresas. Desde la gestión eficiente de proyectos hasta la mejora de la colaboración entre equipos, estamos aquí para ayudarte a alcanzar tus objetivos empresariales.</p>
+                    <p>Nuestra plataforma de juegos interactivos de fiesta es una manera efectiva de atraer más clientes. Al ofrecer eventos divertidos y únicos, puedes captar la atención de un público amplio y diverso. Con nuestra ayuda, puedes convertir tus eventos en experiencias memorables que atraigan a nuevos clientes y aumenten la satisfacción de los existentes.
+                    </p>
                 </div>
                 <div class="beneficios">
                     <h3>Beneficios para las empresas</h3>
                     <ul>
-                        <li>Aumenta la productividad y eficiencia de tu equipo.</li>
-                        <li>Optimiza la gestión de proyectos y tareas.</li>
-                        <li>Mejora la comunicación y colaboración interna.</li>
-                        <li>Obtén insights y análisis para tomar decisiones informadas.</li>
-                        <li>Adapta nuestra solución a las necesidades específicas de tu empresa.</li>
+                        <li>Tener la capacidad de crear eventos con antelación</li>
+                        <li>Obtener prioridad en las búsquedas y notificaciones para los clientes</li>
+                        <li>Disfrutar de juegos exclusivos que solo aparecerán en eventos creados por empresas con el plan Business</li>
+                        <li>Aprovechar la gestión de entradas por parte de nuestra plataforma</li>
                     </ul>
                 </div>
                 <div class="testimonios">
                     <h3>Lo que dicen nuestros clientes empresariales</h3>
                     <div class="testimonio">
                         <blockquote>
-                            <p>"Desde que implementamos la solución, hemos visto un aumento significativo en nuestra eficiencia operativa y una mejora notable en la colaboración entre departamentos. ¡Altamente recomendado para cualquier empresa que busque optimizar sus procesos!"</p>
+                            <p id="si">"Desde que implementamos la solución, hemos visto un aumento significativo en la atracción de clientes y ha habido un aumento significativo gracias a la adquisición del plan business"</p>
                         </blockquote>
-                        <cite>— Ana Rodríguez, Directora de Operaciones, Empresa XYZ</cite>
+                        <cite>— Ana Rodríguez, Responsabe de BABIA</cite>
                     </div>
                 </div>
             </div>
         </section>
         <section class="about">
-            <div class="contenedor">
-                <h2 class="titulo">¿Con que trabajamos?</h2>
+            <div class="contenedorrr">
+                <h2 class="titulo2">¿Con qué trabajamos?</h2>
                 <div class="servicio">
                     <div class="servicioind">
                         <img src="img/bodegas.jpg" alt="">
@@ -126,25 +128,48 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <div class="contenedor">
-            <div class="contenedorfooter">
-                <div class="conntentf">
-                    <h4>TFNO</h4>
-                    <p>8721879</p>
-                </div>
-                <div class="conntentf">
-                    <h4>Email</h4>
-                    <p>8721879</p>
-                </div>
-                <div class="conntentf">
-                    <h4>Localizacion</h4>
-                    <p>8721879</p>
+        <div class="separator"></div> <!-- Divisor con borde blanco -->
+        <section>
+            <div id="contacto">
+                <p>¡Hola! ¿Tienes alguna pregunta o comentario? ¡Estamos aquí para ayudarte! Por favor, completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <div class="separator"></div> <!-- Divisor con borde blanco -->
+
+        <footer>
+            <div class="contenedorMielda">
+                <div class="contenedorfooter">
+                    <div class="conntentf">
+                        <h4>TFNO</h4>
+                        <p>8721879</p>
+                    </div>
+                    <div class="conntentf">
+                        <h4>Email</h4>
+                        <p>8721879</p>
+                    </div>
+                    <div class="conntentf">
+                        <h4>Localizacion</h4>
+                        <p>8721879</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="copyright">
+                <p>&copy; 2024 Party Wars. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        
 </body>
 
 </html>
