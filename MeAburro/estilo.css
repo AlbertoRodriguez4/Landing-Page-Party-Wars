@@ -35,6 +35,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
+  height: auto;
   margin: auto;
   overflow: hidden;
   background-color: #313131;
@@ -559,8 +560,9 @@ main#carousel {
 
 div.item {
   position: absolute;
-  width: 300px;
-  height: 400px;
+  position: absolute;
+  width: 250px; /* Cambiar el valor a uno más grande */
+  height: 500px; /* Cambiar el valor a uno más grande */
   background-color: coral;
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
