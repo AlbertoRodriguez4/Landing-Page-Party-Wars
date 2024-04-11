@@ -413,31 +413,31 @@ h3 {
 .contenedorrr {
     padding: 50px;
     border-radius: 10px;
-    max-width: 600px; /* Limita el ancho del contenido para que no se extienda demasiado */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    display: flex; /* Añade display flex para alinear verticalmente el contenido */
-    flex-direction: column; /* Alinear contenido verticalmente */
-    align-items: center; /* Alinea los elementos verticalmente */
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo2 {
-    font-size: 36px; /* Corrige el tamaño de fuente */
+    font-size: 36px;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 50px; /* Agrega margen inferior para separar del siguiente elemento */
     text-transform: uppercase;
 }
 
 .titulo3 {
     font-size: 20px;
-    color: white; /* Cambia el color del texto a negro */
-    margin-bottom: 30px;
+    color: white;
+    margin-bottom: 50px; /* Agrega margen inferior para separar del siguiente elemento */
     text-transform: uppercase;
 }
 
 #ajustarTamaño {
-    width: 200px; /* Reduce el tamaño de la imagen */
-    height: auto; /* Ajusta automáticamente la altura */
-    margin-bottom: 30px; /* Añade espacio entre la imagen y el botón */
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px; /* Agrega margen inferior para separar del siguiente elemento */
 }
 
 .boton-descarga {
@@ -450,6 +450,7 @@ h3 {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px; /* Agrega margen inferior para separar del siguiente elemento */
 }
 
 .boton-descarga:hover {
