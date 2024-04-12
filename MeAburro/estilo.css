@@ -33,8 +33,8 @@ body {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 100%;
+  width: 80%;
+  max-width: 80%;
   height: auto;
   margin: auto;
   overflow: hidden;
@@ -47,13 +47,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(11, 11, 11, 0.902),
-    rgb(0, 0, 0),
-    rgba(47, 47, 47, 0.9),
-    rgba(49, 49, 49, 0.9)
-  );
+  background-color: #6B7FD7;
   padding: 50px 0;
 }
 
@@ -72,6 +66,7 @@ body {
 .contenedorrr {
   text-align: center;
   border-radius: 10px solid white;
+  
 }
 .separator {
   width: 100%;
@@ -85,13 +80,7 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(11, 11, 11, 0.902),
-    rgb(0, 0, 0),
-    rgba(47, 47, 47, 0.9),
-    rgba(49, 49, 49, 0.9)
-  );
+  background-color: #6B7FD7;
 }
 
 .clientes .descripcion,
@@ -365,12 +354,14 @@ h2 {
 .portafolio {
     width: 100%;
     height: auto;
-  background-color: #313131;
+    background-color: #9DB17C;
 }
 .galeria {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  background-color: #313131;
+
 }
 .imagen {
   width: 24%;
@@ -429,6 +420,8 @@ h2 {
     flex-direction: column;
     text-align: center;
     padding: 50px 0;
+    background-color: #E5C1BD;
+
 }
 
 .contenedorrr {
@@ -439,6 +432,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #E5C1BD;
+
 }
 
 .titulo2 {
@@ -540,13 +535,19 @@ footer {
   grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
   align-items: center;
   justify-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(49, 49, 49, 0.9),
-    rgba(31, 31, 31, 0.9)
-  );
+  background-color: #9DB17C;
 }
+main {
+  width: 100%;
+  height: auto;
+  background-color: #313131;
 
+}
+#main2 {
+  width: 100%;
+  height: auto;
+  background-color: #9DB17C;
+}
 main#carousel {
   grid-row: 1 / 2;
   grid-column: 1 / 8;
@@ -562,10 +563,11 @@ main#carousel {
   --middle: 3;
   --position: 1;
   pointer-events: none;
+  background-color: #9DB17C;
+
 }
 
 div.item {
-  position: absolute;
   position: absolute;
   width: 250px; /* Cambiar el valor a uno más grande */
   height: 500px; /* Cambiar el valor a uno más grande */
@@ -601,6 +603,7 @@ div.item:nth-of-type(5) {
 input[name="position"] {
     margin: 0 20px; /* Ajusta el margen a tu preferencia */
     cursor: pointer; /* Cambia el cursor al hacer clic en los puntos */
+
   }
 input:nth-of-type(1) {
   grid-column: 2 / 3;
@@ -640,6 +643,7 @@ input:nth-of-type(5) {
 }
 input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
+  
 }
 section {
   padding: 20px;
@@ -648,15 +652,20 @@ section {
 #contacto {
   max-width: 90%; /* Para que ocupe casi toda la anchura */
   margin: 0 auto; /* Centrar el contenido */
+  background-color: #19647E;
 }
-
+#pintar {
+  background-color: #19647E;
+}
 #contacto p {
-  text-align: center; /* Centrar el texto */
-  font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+
 }
 
 form {
-  background-color: #3f3f3f; /* Nuevo color de fondo para el formulario */
+  background-color: #19647E;
   padding: 20px;
   border-radius: 5px;
   margin-top: 30px;
@@ -681,7 +690,7 @@ textarea {
   border: 1px solid #666; /* Nuevo color para el borde */
   border-radius: 5px;
   box-sizing: border-box;
-  background-color: #444; /* Nuevo color de fondo para los campos de entrada */
+  background-color: #37392E;
   color: #fff; /* Nuevo color de texto para los campos de entrada */
 }
 
