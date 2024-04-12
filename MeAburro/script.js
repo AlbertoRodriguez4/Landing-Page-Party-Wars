@@ -1,23 +1,3 @@
-const secciones = document.querySelectorAll('main');
-
-// Agrega un evento 'scroll' al documento
-window.addEventListener('scroll', () => {
-    let posicionActual = window.scrollY;
-
-    // Itera sobre cada sección
-    secciones.forEach(seccion => {
-        const seccionRect = seccion.getBoundingClientRect();
-
-        // Verifica si la sección está visible en la ventana gráfica
-        if (seccionRect.top <= 0 && seccionRect.bottom > 0) {
-            // Agrega la clase 'fijado' a la sección actualmente visible
-            seccion.classList.add('fijado');
-        } else {
-            // Quita la clase 'fijado' de las secciones que no están visibles
-            seccion.classList.remove('fijado');
-        }
-    });
-});
 var timeout; // Variable para almacenar el temporizador
 
 window.addEventListener('scroll', function() {
@@ -27,7 +7,7 @@ window.addEventListener('scroll', function() {
         if (bounding.top < window.innerHeight / 2 && bounding.bottom > window.innerHeight / 2) {
             item.style.opacity = 1; // Si el elemento está en la mitad de la ventana, establece opacidad a 1
         } else {
-            item.style.opacity = 0.5; // Si el elemento no está en la mitad de la ventana, establece opacidad a 0.5
+            item.style.opacity = 0.2; // Si el elemento no está en la mitad de la ventana, establece opacidad a 0.5
         }
     });
 

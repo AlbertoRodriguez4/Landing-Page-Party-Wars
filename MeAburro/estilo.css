@@ -2,9 +2,13 @@
     --color-titulos : #ffd600; 
 }
 * {
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+
 }
 html {
   background-image: linear-gradient(
@@ -70,7 +74,7 @@ body {
 }
 .separator {
   width: 100%;
-  height: 2px; /* Grosor del borde */
+  height: 10px; /* Grosor del borde */
   background-color: #fff; /* Color del borde */
 }
 
@@ -743,4 +747,22 @@ footer {
   background-color: white; /* Cambia el color de fondo según tu diseño */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: Agrega una sombra para resaltar */
   transition: top 0.3s ease-in-out; /* Agrega una transición suave para la propiedad 'top' */
+}
+@keyframes fade-up {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 1s ease-in-out;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
