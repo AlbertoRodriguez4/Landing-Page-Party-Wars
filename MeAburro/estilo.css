@@ -152,6 +152,11 @@ p {
 #si {
   color: #000;
 }
+.clientes .testimonios img {
+  max-width: 10%;
+  height: auto;
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
 /* Estilos para el menú principal */
 /* Estilos para el menú principal */
 /* Estilos para el menú principal */
@@ -728,4 +733,14 @@ footer {
 /* Opcional: estilos para el texto de copyright */
 .copyright p {
   font-size: 14px; /* Tamaño de fuente */
+}
+.fijado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ajusta el valor según sea necesario */
+  background-color: white; /* Cambia el color de fondo según tu diseño */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: Agrega una sombra para resaltar */
+  transition: top 0.3s ease-in-out; /* Agrega una transición suave para la propiedad 'top' */
 }
