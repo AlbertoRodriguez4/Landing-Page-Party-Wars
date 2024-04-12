@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
         navItems.forEach(function(item) {
             item.style.opacity = 1; // Restablecer el color a su estado original
         });
-    }, 5000); // 5000 milisegundos (5 segundos)
+    }, 3000); // 5000 milisegundos (5 segundos)
 });
 
 
