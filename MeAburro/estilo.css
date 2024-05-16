@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: #6B7FD7;
+  background-color: #4D5260;
   padding: 50px 0;
 }
 
@@ -84,7 +84,7 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-color: #6B7FD7;
+  background-color: #4D5260;
 }
 
 .clientes .descripcion,
@@ -363,7 +363,7 @@ h2 {
 .portafolio {
     width: 100%;
     height: auto;
-    background-color: #9DB17C;
+    background-color: #666;
 }
 .galeria {
   display: flex;
@@ -429,7 +429,7 @@ h2 {
     flex-direction: column;
     text-align: center;
     padding: 50px 0;
-    background-color: #E5C1BD;
+    background-color: #7E7E7E;
 
 }
 
@@ -441,7 +441,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E5C1BD;
+    background-color: #7E7E7E;
 
 }
 
@@ -544,7 +544,7 @@ footer {
   grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
   align-items: center;
   justify-items: center;
-  background-color: #9DB17C;
+  background-color: #666;
 }
 main {
   width: 100%;
@@ -555,7 +555,7 @@ main {
 #main2 {
   width: 100%;
   height: auto;
-  background-color: #9DB17C;
+  background-color: #666;
 }
 main#carousel {
   grid-row: 1 / 2;
@@ -572,7 +572,7 @@ main#carousel {
   --middle: 3;
   --position: 1;
   pointer-events: none;
-  background-color: #9DB17C;
+  background-color: #666;
 
 }
 
