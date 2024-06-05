@@ -663,25 +663,26 @@ section {
 #contacto {
   max-width: 90%; /* Para que ocupe casi toda la anchura */
   margin: 0 auto; /* Centrar el contenido */
-  background-color: #19647E;
+  background-color: #2D6A4F;
 }
 #pintar {
-  background-color: #19647E;
+  background-color: #2D6A4F; /* Verde oscuro */
 }
+
 #contacto p {
-    color: white;
+    color: #FFFFFF; /* Blanco */
     font-weight: bold;
     font-size: 25px;
-
 }
 
 form {
-  background-color: #19647E;
+  background-color: #2D6A4F; /* Verde oscuro */
   padding: 20px;
   border-radius: 5px;
   margin-top: 30px;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF; /* Blanco */
 }
+
 input {
   border: 10px solid white;
 }
